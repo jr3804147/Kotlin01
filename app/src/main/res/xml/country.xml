@@ -1,0 +1,12 @@
+<resources>
+    <string country="한국" capital="서울" />
+    <string country="그리스" capital="아테네" />
+    <string country="네덜란드" capital="암스테르담" />
+    <string country="독일" capital="베를린" />
+    <string country="러시아" capital="모스크바" />
+    <string country="몬테네그로" capital="포드고리차" />
+    <string country="벨기에" capital="브뤼셀" />
+    <string country="스웨덴" capital="스톡홀름" />
+    <string country="이탈리아" capital="로마" />
+    <string country="중국" capital="베이징" />
+</resources>

@@ -1,0 +1,12 @@
+<resources>
+    <dimen name="qustion_size">30dp</dimen>
+    <dimen name="qustion_word_bottom_padding">20dp</dimen>
+    <dimen name="button_text_size">17dp</dimen>
+    <dimen name="button_width_size">150dp</dimen>
+    <dimen name="navi_button_text_size">20dp</dimen>
+    <dimen name="navi_button_top_padding">20dp</dimen>
+    <dimen name="navi_button_height">50dp</dimen>
+    <dimen name="navi_button_right_margin">30dp</dimen>
+    <dimen name="mode_button_bottom_margin">20dp</dimen>
+</resources>
+

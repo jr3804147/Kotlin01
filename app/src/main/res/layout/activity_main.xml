@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/mode_toZero"
+        android:layout_width="@dimen/button_width_size"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/mode_button_bottom_margin"
+        android:text="초기화"
+        android:textSize="@dimen/button_text_size"/>
+
+    <TextView
+        android:id="@+id/TV_CntTest01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/TV_CntRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="@dimen/mode_button_bottom_margin"
+            android:textSize="30dp"/>
+
+        <TextView
+            android:id="@+id/TV_CntLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/mode_button_bottom_margin"
+            android:textSize="30dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/mode_button"
+        android:layout_width="@dimen/button_width_size"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/mode_button_bottom_margin"
+        android:text="@string/country_mode"
+        android:textSize="@dimen/button_text_size"/>
+
+    <TextView
+        android:id="@+id/question_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Question"
+        android:textSize="@dimen/qustion_size"/>
+
+    <TextView
+        android:id="@+id/question_word_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="@dimen/qustion_word_bottom_padding"
+        android:text="Word"
+        android:textSize="@dimen/qustion_size"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/answer_one"
+                android:layout_width="@dimen/button_width_size"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/button_text_size"/>
+
+            <Button
+                android:id="@+id/answer_two"
+                android:layout_width="@dimen/button_width_size"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/button_text_size"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/answer_three"
+                android:layout_width="@dimen/button_width_size"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/button_text_size"/>
+
+            <Button
+                android:id="@+id/answer_four"
+                android:layout_width="@dimen/button_width_size"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/button_text_size"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/navi_button_top_padding">
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/navi_button_height"
+            android:layout_gravity="right"
+            android:drawableRight="@drawable/arrow_right"
+            android:text="@string/next_button"
+            android:textSize="@dimen/navi_button_text_size"/>
+    </LinearLayout>
+</LinearLayout>
+
+

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">WordQuiz13</string>
+    <string name="prev_button">이전</string>
+    <string name="next_button">다음</string>
+    <string name="answer_true">정답!</string>
+    <string name="answer_false">오답!</string>
+    <string name="country_mode">수도 퀴즈</string>
+    <string name="toefl01_mode">TOEFL QUIZ 01</string>
+    <string name="toefl02_mode">TOEFL QUIZ 02</string>
+
+    <string name="country_title">다음 국가의 수도는?</string>
+    <string name="toefl01_title">다음 단어를 영어로?</string>
+    <string name="toefl02_title">다음 단어를 영어로?</string>
+</resources>
+
