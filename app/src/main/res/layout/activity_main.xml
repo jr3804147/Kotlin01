@@ -11,7 +11,7 @@
         android:layout_width="@dimen/button_width_size"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/mode_button_bottom_margin"
-        android:text="초기화"
+        android:text="Initializing"
         android:textSize="@dimen/button_text_size"/>
 
     <TextView
@@ -44,11 +44,12 @@
     </LinearLayout>
 
     <Button
+        android:textAllCaps="false"
         android:id="@+id/mode_button"
         android:layout_width="@dimen/button_width_size"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/mode_button_bottom_margin"
-        android:text="@string/country_mode"
+        android:text="@string/caihong_biz62_mode"
         android:textSize="@dimen/button_text_size"/>
 
     <TextView
@@ -79,12 +80,14 @@
             android:orientation="horizontal">
 
             <Button
+                android:textAllCaps="false"
                 android:id="@+id/answer_one"
                 android:layout_width="@dimen/button_width_size"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/button_text_size"/>
 
             <Button
+                android:textAllCaps="false"
                 android:id="@+id/answer_two"
                 android:layout_width="@dimen/button_width_size"
                 android:layout_height="wrap_content"
@@ -97,12 +100,14 @@
             android:orientation="horizontal">
 
             <Button
+                android:textAllCaps="false"
                 android:id="@+id/answer_three"
                 android:layout_width="@dimen/button_width_size"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/button_text_size"/>
 
             <Button
+                android:textAllCaps="false"
                 android:id="@+id/answer_four"
                 android:layout_width="@dimen/button_width_size"
                 android:layout_height="wrap_content"

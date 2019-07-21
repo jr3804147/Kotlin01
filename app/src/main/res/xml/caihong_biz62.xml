@@ -1,0 +1,87 @@
+<resources>
+    <string chinese4="厉害" pinyin4="lì hai" />
+    <string chinese4="随着" pinyin4="suí zhe" />
+    <string chinese4="规模" pinyin4="guī mó " />
+    <string chinese4="逐渐" pinyin4="zhú jiàn" />
+    <string chinese4="扩大" pinyin4="kuò dà" />
+    <string chinese4="用户" pinyin4="yòng hù" />
+    <string chinese4="达" pinyin4="dá" />
+    <string chinese4="千" pinyin4="qiān" />
+    <string chinese4="万" pinyin4="wàn" />
+    <string chinese4="冒昧" pinyin4="mào mèi" />
+    <string chinese4="销售" pinyin4="xiāo shòu" />
+    <string chinese4="销售额" pinyin4="xiāo shòu é" />
+    <string chinese4="亲眼" pinyin4="qīn yǎn" />
+    <string chinese4="设备" pinyin4="shè bèi" />
+    <string chinese4="以及" pinyin4="yǐ jí" />
+    <string chinese4="经营" pinyin4="jīng yíng" />
+    <string chinese4="信赖" pinyin4="xìn lài" />
+    <string chinese4="方向" pinyin4="fāng xiàng" />
+    <string chinese4="收入" pinyin4="shōu rù" />
+    <string chinese4="增加" pinyin4="zēng jiā" />
+    <string chinese4="科学" pinyin4="kē xué" />
+    <string chinese4="生活" pinyin4="shēng huó" />
+    <string chinese4="安装" pinyin4="ān zhuāng" />
+    <string chinese4="其他" pinyin4="qí tā" />
+    <string chinese4="条款" pinyin4="tiáo kuǎn" />
+    <string chinese4="认真" pinyin4="rèn zhēn" />
+    <string chinese4="期限" pinyin4="qī xiàn" />
+    <string chinese4="意见" pinyin4="yì jiàn" />
+    <string chinese4="为" pinyin4="wéi" />
+    <string chinese4="短" pinyin4="duǎn" />
+    <string chinese4="延长" pinyin4="yán cháng" />
+    <string chinese4="定金" pinyin4="dìng jīn" />
+    <string chinese4="版税" pinyin4="bǎn shuì" />
+    <string chinese4="投入" pinyin4="tóu rù" />
+    <string chinese4="大量" pinyin4="dà liàng" />
+    <string chinese4="研发" pinyin4="yán fā" />
+    <string chinese4="不得不" pinyin4="bù dé bù" />
+    <string chinese4="固然" pinyin4="gù rán" />
+    <string chinese4="推销" pinyin4="tuī xiāo" />
+    <string chinese4="停电" pinyin4="tíng diàn" />
+    <string chinese4="打" pinyin4="dǎ" />
+    <string chinese4="重新" pinyin4="chóng xīn" />
+    <string chinese4="急事" pinyin4="jí shì" />
+    <string chinese4="改天" pinyin4="gǎi tiān" />
+    <string chinese4="适合" pinyin4="shì hé" />
+    <string chinese4="双方" pinyin4="shuāng fāng" />
+    <string chinese4="进一步" pinyin4="jìn yī bù" />
+    <string chinese4="指" pinyin4="zhǐ" />
+    <string chinese4="项" pinyin4="xiàng" />
+    <string chinese4="以～为～" pinyin4="yǐ～ wéi～" />
+    <string chinese4="例" pinyin4="lì" />
+    <string chinese4="次月" pinyin4="cì yuè" />
+    <string chinese4="改" pinyin4="gǎi" />
+    <string chinese4="末" pinyin4="mò" />
+    <string chinese4="既然" pinyin4="jì rán" />
+    <string chinese4="承诺" pinyin4="chéng nuò" />
+    <string chinese4="玩具" pinyin4="wán jù" />
+    <string chinese4="动画片儿" pinyin4="dòng huà piàn é(er)" />
+    <string chinese4="标明" pinyin4="biāo míng" />
+    <string chinese4="准" pinyin4="zhǔn" />
+    <string chinese4="目标" pinyin4="mù biāo" />
+    <string chinese4="偿还" pinyin4="cháng huán " />
+    <string chinese4="戒烟" pinyin4="jiè yān" />
+    <string chinese4="半途而废" pinyin4="bàn tú é(er) fèi" />
+    <string chinese4="签订" pinyin4="qiān dìng" />
+    <string chinese4="本" pinyin4="běn" />
+    <string chinese4="英文" pinyin4="yīng wén" />
+    <string chinese4="最终" pinyin4="zuì zhōng" />
+    <string chinese4="异议" pinyin4="yì yì" />
+    <string chinese4="任何" pinyin4="rèn hé" />
+    <string chinese4="所有" pinyin4="suǒ yǒu" />
+    <string chinese4="达成" pinyin4="dá chéng" />
+    <string chinese4="协议" pinyin4="xié yì" />
+    <string chinese4="多亏" pinyin4="duō kuī" />
+    <string chinese4="大力" pinyin4="dà lì" />
+    <string chinese4="协助" pinyin4="xié zhù" />
+    <string chinese4="由于" pinyin4="yóu yú" />
+    <string chinese4="因此" pinyin4="yīn cǐ" />
+    <string chinese4="谅解" pinyin4="liàng jiě" />
+    <string chinese4="二手" pinyin4="è(er) shǒu" />
+    <string chinese4="保密" pinyin4="bǎo mì" />
+    <string chinese4="提前" pinyin4="tí qián" />
+    <string chinese4="教" pinyin4="jiào" />
+    <string chinese4="进步" pinyin4="jìn bù" />
+    <string chinese4="因特网" pinyin4="yīn tè wǎng" />
+</resources>

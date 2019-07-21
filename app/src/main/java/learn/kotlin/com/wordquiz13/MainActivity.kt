@@ -11,13 +11,13 @@ import java.nio.charset.Charset
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
-    private val MODE_COUNTRY = 2
     private val MODE_toefl01 = 3
     private val MODE_toefl02 = 4
+    private val MODE_caihong_biz62 = 5
     private val mQuestions = mutableListOf<Question>()
     private var mCurrentNumber: Int = 0
     private val mAnswer = mutableListOf<Int>()
-    private var mMode: Int = 3
+    private var mMode: Int = 5
     private var CntText01 = "Bye World!"
     private var CntRight = 1000
     private var CntLeft = 2000
@@ -62,7 +62,7 @@ class MainActivity : AppCompatActivity() {
         CntLeft = CntText01.substring(5,8).toInt()
         TV_CntRight.setText("정답수 : ${CntRight}")
         TV_CntLeft.setText("오답수 : ${CntLeft}")
-        mode_button.setText(R.string.toefl01_mode)
+        mode_button.setText(R.string.caihong_biz62_mode)
 /*
         myfile.printWriter().use { out ->
             out.print("Head ")
@@ -83,11 +83,7 @@ class MainActivity : AppCompatActivity() {
         lateinit var answerAttribute: String
         var id: Int = 0
 
-        if (mMode == MODE_COUNTRY) {
-            questionAttribute = "country"
-            answerAttribute = "capital"
-            id = R.xml.country
-        } else if (mMode == MODE_toefl01) {
+        if (mMode == MODE_toefl01) {
             questionAttribute = "korean2"
             answerAttribute = "english2"
             id = R.xml.toefl01
@@ -95,6 +91,10 @@ class MainActivity : AppCompatActivity() {
             questionAttribute = "korean3"
             answerAttribute = "english3"
             id = R.xml.toefl02
+        } else if (mMode == MODE_caihong_biz62) {
+            questionAttribute = "chinese4"
+            answerAttribute = "pinyin4"
+            id = R.xml.caihong_biz62
         }
 
         var xml = applicationContext.resources.getXml(id)
@@ -125,11 +125,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showQuestion() {
-        if (mMode == MODE_COUNTRY) {
-            val random = Random()
-            mCurrentNumber = random.nextInt(mQuestions.size)
-            question_text.setText("${mCurrentNumber + 1}" + ". " + resources.getString(R.string.country_title))
-        } else if (mMode == MODE_toefl01) {
+        if (mMode == MODE_toefl01) {
             val random = Random()
             mCurrentNumber = random.nextInt(mQuestions.size)
             question_text.setText("${mCurrentNumber + 1}" + ". " + resources.getString(R.string.toefl01_title))
@@ -137,6 +133,10 @@ class MainActivity : AppCompatActivity() {
             val random = Random()
             mCurrentNumber = random.nextInt(mQuestions.size)
             question_text.setText("${mCurrentNumber + 1}" + ". " + resources.getString(R.string.toefl02_title))
+        } else if (mMode == MODE_caihong_biz62) {
+            val random = Random()
+            mCurrentNumber = random.nextInt(mQuestions.size)
+            question_text.setText("${mCurrentNumber + 1}" + ". " + resources.getString(R.string.caihong_biz62_title))
         }
         question_word_text.setText(mQuestions[mCurrentNumber].questionData)
 
@@ -166,15 +166,15 @@ class MainActivity : AppCompatActivity() {
         }
 
         mode_button.setOnClickListener {
-            if (mMode == MODE_COUNTRY) {
-                mMode = 3
-                mode_button.setText(R.string.toefl01_mode)
-            } else if (mMode == MODE_toefl01) {
+            if (mMode == MODE_toefl01) {
                 mMode = 4
                 mode_button.setText(R.string.toefl02_mode)
             } else if (mMode == MODE_toefl02) {
-                mMode = 2
-                mode_button.setText(R.string.country_mode)
+                mMode = 5
+                mode_button.setText(R.string.caihong_biz62_mode)
+            } else if (mMode == MODE_caihong_biz62) {
+                mMode = 3
+                mode_button.setText(R.string.toefl01_mode)
             }
             mQuestions.clear()
             setQuestion()
