@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
     private var CntLeft = 2000
     private var saveCntRight = CntRight
     private var saveCntLeft = CntLeft
+    private var getAnswer3 = "getAnswer3"
 
     // 시스템의 임시 디렉토리명을 획득, 운영체제마다 다름
     // Windows 10의 경우 C:\Users\{user}\AppData\Local\Temp\
@@ -40,6 +41,7 @@ class MainActivity : AppCompatActivity() {
         setQuestion()
         updateUi()
         setButton()
+        getAnswer2()
 
         if (!someFile.exists())
         {
@@ -74,6 +76,13 @@ class MainActivity : AppCompatActivity() {
         //lines.forEach { line -> println(line) }
         lines.forEach { line -> TV_CntTest01.setText(line) }
 */
+    }
+
+    private fun getAnswer2(){
+        submit2.setOnClickListener{
+            getAnswer3 = editText2.text.toString()
+            Toast.makeText(this, getAnswer3, Toast.LENGTH_SHORT).show()
+        }
     }
 
     private fun setQuestion() {
