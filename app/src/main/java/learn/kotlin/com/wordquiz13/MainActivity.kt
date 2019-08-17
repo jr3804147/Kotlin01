@@ -152,7 +152,6 @@ class MainActivity : AppCompatActivity() {
         answer_one.isEnabled = true
         answer_two.isEnabled = true
         answer_three.isEnabled = true
-        answer_four.isEnabled = true
         next_button.isEnabled = false
     }
 
@@ -250,24 +249,6 @@ class MainActivity : AppCompatActivity() {
             answer_three.isEnabled = false
             next_button.isEnabled = true
         }
-
-        answer_four.setOnClickListener {
-            if (mQuestions[mCurrentNumber].answerData == mQuestions[mAnswer.get(3)].answerData) {
-                Toast.makeText(applicationContext, R.string.answer_true, Toast.LENGTH_SHORT).show()
-                CntRight++;
-                saveCntRight = CntRight + 1000
-                someFile.writeText(saveCntRight.toString()+saveCntLeft.toString(), Charset.forName("EUC-KR"))
-                TV_CntRight.setText("정답수 : ${CntRight}")
-            } else {
-                Toast.makeText(applicationContext, R.string.answer_false, Toast.LENGTH_SHORT).show()
-                CntLeft++
-                saveCntLeft = CntLeft + 2000
-                someFile.writeText(saveCntRight.toString()+saveCntLeft.toString(), Charset.forName("EUC-KR"))
-                TV_CntLeft.setText("오답수 : ${CntLeft}")
-            }
-            answer_four.isEnabled = false
-            next_button.isEnabled = true
-        }
     }
 
     private fun setAnswerData() {
@@ -312,7 +293,6 @@ class MainActivity : AppCompatActivity() {
         answer_one.setText(mQuestions[mAnswer.get(0)].answerData)
         answer_two.setText(mQuestions[mAnswer.get(1)].answerData)
         answer_three.setText(mQuestions[mAnswer.get(2)].answerData)
-        answer_four.setText(mQuestions[mAnswer.get(3)].answerData)
     }
 }
 

@@ -74,45 +74,27 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
+        <Button
+            android:textAllCaps="false"
+            android:id="@+id/answer_one"
+            android:layout_width="@dimen/button_width_siz2"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:textSize="@dimen/button_text_size"/>
 
-            <Button
-                android:textAllCaps="false"
-                android:id="@+id/answer_one"
-                android:layout_width="@dimen/button_width_size"
-                android:layout_height="wrap_content"
-                android:textSize="@dimen/button_text_size"/>
-
-            <Button
-                android:textAllCaps="false"
-                android:id="@+id/answer_two"
-                android:layout_width="@dimen/button_width_size"
-                android:layout_height="wrap_content"
-                android:textSize="@dimen/button_text_size"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
+        <Button
+            android:textAllCaps="false"
+            android:id="@+id/answer_two"
+            android:layout_width="@dimen/button_width_siz2"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:textSize="@dimen/button_text_size"/>
 
-            <Button
-                android:textAllCaps="false"
-                android:id="@+id/answer_three"
-                android:layout_width="@dimen/button_width_size"
-                android:layout_height="wrap_content"
-                android:textSize="@dimen/button_text_size"/>
+        <Button
+            android:textAllCaps="false"
+            android:id="@+id/answer_three"
+            android:layout_width="@dimen/button_width_siz2"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/button_text_size"/>
 
-            <Button
-                android:textAllCaps="false"
-                android:id="@+id/answer_four"
-                android:layout_width="@dimen/button_width_size"
-                android:layout_height="wrap_content"
-                android:textSize="@dimen/button_text_size"/>
-        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
