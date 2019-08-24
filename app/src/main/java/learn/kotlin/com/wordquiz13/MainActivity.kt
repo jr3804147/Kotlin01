@@ -82,6 +82,21 @@ class MainActivity : AppCompatActivity() {
         submit2.setOnClickListener{
             getAnswer3 = editText2.text.toString()
             Toast.makeText(this, getAnswer3, Toast.LENGTH_SHORT).show()
+
+            if (mQuestions[mCurrentNumber].answerData == getAnswer3) {
+                Toast.makeText(applicationContext, R.string.answer_true, Toast.LENGTH_SHORT).show()
+                CntRight++;
+                saveCntRight = CntRight + 1000
+                someFile.writeText(saveCntRight.toString()+saveCntLeft.toString(), Charset.forName("EUC-KR"))
+                TV_CntRight.setText("정답수 : ${CntRight}")
+            } else {
+                Toast.makeText(applicationContext, R.string.answer_false, Toast.LENGTH_SHORT).show()
+                CntLeft++
+                saveCntLeft = CntLeft + 2000
+                someFile.writeText(saveCntRight.toString()+saveCntLeft.toString(), Charset.forName("EUC-KR"))
+                TV_CntLeft.setText("오답수 : ${CntLeft}")
+            }
+            next_button.isEnabled = true
         }
     }
 

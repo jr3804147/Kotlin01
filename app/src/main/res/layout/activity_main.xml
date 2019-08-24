@@ -6,11 +6,16 @@
     android:gravity="center"
     android:orientation="vertical">
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
     <Button
         android:id="@+id/mode_toZero"
         android:layout_width="@dimen/button_width_size"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/mode_button_bottom_margin"
+        android:layout_marginBottom="10dp"
         android:text="Initializing"
         android:textSize="@dimen/button_text_size"/>
 
@@ -21,6 +26,7 @@
         android:layout_gravity="center_horizontal"
         android:textSize="30dp"/>
 
+    </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -31,7 +37,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginRight="@dimen/mode_button_bottom_margin"
+            android:layout_marginRight="20dp"
             android:textSize="30dp"/>
 
         <TextView
@@ -39,7 +45,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginLeft="@dimen/mode_button_bottom_margin"
+            android:layout_marginLeft="20dp"
             android:textSize="30dp"/>
     </LinearLayout>
 
@@ -116,14 +122,6 @@
             android:layout_height="wrap_content"
             android:text="Submit"/>
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingTop="@dimen/navi_button_top_padding">
-
         <Button
             android:id="@+id/next_button"
             android:layout_width="wrap_content"
@@ -132,7 +130,9 @@
             android:drawableRight="@drawable/arrow_right"
             android:text="@string/next_button"
             android:textSize="@dimen/navi_button_text_size"/>
+
     </LinearLayout>
+
 </LinearLayout>
 
 
