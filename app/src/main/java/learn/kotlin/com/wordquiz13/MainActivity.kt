@@ -209,6 +209,7 @@ class MainActivity : AppCompatActivity() {
             val random = Random()
             mCurrentNumber = random.nextInt(mQuestions.size)
             updateUi()
+            editText2.setText("")
         }
 
         answer_one.setOnClickListener {
@@ -272,7 +273,6 @@ class MainActivity : AppCompatActivity() {
         mAnswer.add(0, -1)
         mAnswer.add(1, -1)
         mAnswer.add(2, -1)
-        mAnswer.add(3, -1)
 
         var count = 0
         val random = Random()
@@ -284,7 +284,7 @@ class MainActivity : AppCompatActivity() {
                 continue
             }
 
-            for (i in 0..2) {
+            for (i in 0..1) {
                 if (temp == mAnswer.get(i)) {
                     isDuplicated = true
                 }
@@ -296,11 +296,11 @@ class MainActivity : AppCompatActivity() {
                 mAnswer.set(count, temp)
                 count++
             }
-            if (count > 2) {
+            if (count > 1) {
                 break
             }
         }
-        mAnswer.set(3, mCurrentNumber)
+        mAnswer.set(2, mCurrentNumber)
         Collections.shuffle(mAnswer)
     }
 
